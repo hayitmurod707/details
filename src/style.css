@@ -1,0 +1,23 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./Gilroy-SemiBold.woff2');
+	font-weight: 600;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./Gilroy-Medium.woff2');
+	font-weight: 500;
+}
+body {
+	font-family: 'Gilroy', sans-serif;
+	margin: 0;
+}
+#root {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
