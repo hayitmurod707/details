@@ -5,13 +5,14 @@ import Detail from './Detail';
 const StyledElement = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 700px;
+	max-width: 700px;
+	width: 100%;
 `;
 const Details = ({ details }) => {
 	const [activePanel, setActivePanel] = useState(0);
 	return (
 		<StyledElement>
-			{details?.map((detail, index) => (
+			{(Array.isArray(details) ? details : []).map((detail, index) => (
 				<Detail
 					{...detail}
 					activePanel={activePanel}

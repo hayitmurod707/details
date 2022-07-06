@@ -77,7 +77,7 @@ const Detail = ({ activePanel, content, index, setActivePanel, title }) => {
 		} else {
 			window.jQuery(ref.current).slideUp(400);
 		}
-	}, [activePanel]);
+	}, [isActive]);
 	return (
 		<StyledElement>
 			<div
