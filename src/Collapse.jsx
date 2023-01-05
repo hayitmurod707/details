@@ -67,7 +67,7 @@ const StyledElement = styled.div`
 		}
 	}
 `;
-const toggle = (ref, duration) => {
+// const toggle = (ref, duration) => {
 	// const isNumber = typeof duration === 'number' ? duration : 400;
 	// const time = parseInt(isNumber / 10);
 	// const isOpen = ref.current.style.display;
@@ -88,7 +88,7 @@ const toggle = (ref, duration) => {
 	// 		ref.current.style.display = 'block';
 	// 	}
 	// }
-};
+// };
 const Detail = () => {
 	const ref = useRef(null);
 	const [active, setActive] = useState(false);
