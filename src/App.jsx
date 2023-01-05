@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Collapse from './Collapse';
 import Details from './Details';
 const App = () => {
 	const [details, setDetails] = useState([
@@ -27,6 +28,7 @@ const App = () => {
 		<>
 			<h1>React scripts</h1>
 			<Details details={details} />
+			<Collapse />
 		</>
 	);
 };
